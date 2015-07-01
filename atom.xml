@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   
-  <title><![CDATA[CodeLiar]]></title>
+  <title><![CDATA[木子的博客]]></title>
   <subtitle><![CDATA[惆怅东栏一株雪  人生看得几清明]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="//"/>
@@ -9,7 +9,7 @@
   <id>//</id>
   
   <author>
-    <name><![CDATA[dmj]]></name>
+    <name><![CDATA[木子]]></name>
     
   </author>
   
