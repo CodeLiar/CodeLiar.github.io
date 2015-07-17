@@ -180,94 +180,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x4E00;&#x4E0B;git&#x547D;&#x4EE4;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x6253;&#x7B97;&#x4EE5;&#x540E;&#x6BCF;&#x5468;&#x8BE6;&#x7EC6;&#x4E86;&#x89E3;&#x5176;&#x4E2D;&#x4E09;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x6837;&#x4E89;&#x53D6;&#x5728;&#x4E24;&#x4E2A;&#x6708;&#x5185;&#x5C06;git&#x547D;&#x4EE4;&#x719F;&#x6089;&#xFF0C;&#x66F4;&#x52A0;&#x5FEB;&#x6377;&#x7684;&#x505A;&#x597D;&#x5DE5;&#x4F5C;</p>
-<p>git init                                                  # &#x521D;&#x59CB;&#x5316;&#x672C;&#x5730;git&#x4ED3;&#x5E93;&#xFF08;&#x521B;&#x5EFA;&#x65B0;&#x4ED3;&#x5E93;&#xFF09;</p>
-<p>git config &#x2014;global user.name &#x201C;xxx&#x201D;                       # &#x914D;&#x7F6E;&#x7528;&#x6237;&#x540D;</p>
-<p>git config &#x2014;global user.email &#x201C;xxx@xxx.com&#x201D;              # &#x914D;&#x7F6E;&#x90AE;&#x4EF6;</p>
-<p>git config &#x2014;global color.ui true                         # git status&#x7B49;&#x547D;&#x4EE4;&#x81EA;&#x52A8;&#x7740;&#x8272;</p>
-<p>git config &#x2014;global color.status auto</p>
-<p>git config &#x2014;global color.diff auto</p>
-<p>git config &#x2014;global color.branch auto</p>
-<p>git config &#x2014;global color.interactive auto</p>
-<p>git config &#x2014;global &#x2014;unset http.proxy                    # remove  proxy configuration on git</p>
-<p>git clone git+ssh://git@192.168.53.168/VT.git             # clone&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</p>
-<p>git status                                                # &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7248;&#x672C;&#x72B6;&#x6001;&#xFF08;&#x662F;&#x5426;&#x4FEE;&#x6539;&#xFF09;</p>
-<p>git add xyz                                               # &#x6DFB;&#x52A0;xyz&#x6587;&#x4EF6;&#x81F3;index</p>
-<p>git add .                                                 # &#x589E;&#x52A0;&#x5F53;&#x524D;&#x5B50;&#x76EE;&#x5F55;&#x4E0B;&#x6240;&#x6709;&#x66F4;&#x6539;&#x8FC7;&#x7684;&#x6587;&#x4EF6;&#x81F3;index</p>
-<p>git commit -m &#x2018;xxx&#x2019;                                       # &#x63D0;&#x4EA4;</p>
-<p>git commit &#x2014;amend -m &#x2018;xxx&#x2019;                               # &#x5408;&#x5E76;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#xFF08;&#x7528;&#x4E8E;&#x53CD;&#x590D;&#x4FEE;&#x6539;&#xFF09;</p>
-<p>git commit -am &#x2018;xxx&#x2019;                                      # &#x5C06;add&#x548C;commit&#x5408;&#x4E3A;&#x4E00;&#x6B65;</p>
-<p>git rm xxx                                                # &#x5220;&#x9664;index&#x4E2D;&#x7684;&#x6587;&#x4EF6;</p>
-<p>git rm -r *                                               # &#x9012;&#x5F52;&#x5220;&#x9664;</p>
-<p>git log                                                   # &#x663E;&#x793A;&#x63D0;&#x4EA4;&#x65E5;&#x5FD7;</p>
-<p>git log -1                                                # &#x663E;&#x793A;1&#x884C;&#x65E5;&#x5FD7; -n&#x4E3A;n&#x884C;</p>
-<p>git log -5</p>
-<p>git log &#x2014;stat                                            # &#x663E;&#x793A;&#x63D0;&#x4EA4;&#x65E5;&#x5FD7;&#x53CA;&#x76F8;&#x5173;&#x53D8;&#x52A8;&#x6587;&#x4EF6;</p>
-<p>git log -p -m</p>
-<p>git show dfb02e6e4f2f7b573337763e5c0013802e392818         # &#x663E;&#x793A;&#x67D0;&#x4E2A;&#x63D0;&#x4EA4;&#x7684;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</p>
-<p>git show dfb02                                            # &#x53EF;&#x53EA;&#x7528;commitid&#x7684;&#x524D;&#x51E0;&#x4F4D;</p>
-<p>git show HEAD                                             # &#x663E;&#x793A;HEAD&#x63D0;&#x4EA4;&#x65E5;&#x5FD7;</p>
-<p>git show HEAD^                                            # &#x663E;&#x793A;HEAD&#x7684;&#x7236;&#xFF08;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF09;&#x7684;&#x63D0;&#x4EA4;&#x65E5;&#x5FD7; ^^&#x4E3A;&#x4E0A;&#x4E24;&#x4E2A;&#x7248;&#x672C; ^5&#x4E3A;&#x4E0A;5&#x4E2A;&#x7248;&#x672C;</p>
-<p>git tag                                                   # &#x663E;&#x793A;&#x5DF2;&#x5B58;&#x5728;&#x7684;tag</p>
-<p>git tag -a v2.0 -m &#x2018;xxx&#x2019;                                  # &#x589E;&#x52A0;v2.0&#x7684;tag</p>
-<p>git show v2.0                                             # &#x663E;&#x793A;v2.0&#x7684;&#x65E5;&#x5FD7;&#x53CA;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</p>
-<p>git log v2.0                                              # &#x663E;&#x793A;v2.0&#x7684;&#x65E5;&#x5FD7;</p>
-<p>git diff                                                  # &#x663E;&#x793A;&#x6240;&#x6709;&#x672A;&#x6DFB;&#x52A0;&#x81F3;index&#x7684;&#x53D8;&#x66F4;</p>
-<p>git diff &#x2014;cached                                         # &#x663E;&#x793A;&#x6240;&#x6709;&#x5DF2;&#x6DFB;&#x52A0;index&#x4F46;&#x8FD8;&#x672A;commit&#x7684;&#x53D8;&#x66F4;</p>
-<p>git diff HEAD^                                            # &#x6BD4;&#x8F83;&#x4E0E;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x5DEE;&#x5F02;</p>
-<p>git diff HEAD &#x2014; ./lib                                    # &#x6BD4;&#x8F83;&#x4E0E;HEAD&#x7248;&#x672C;lib&#x76EE;&#x5F55;&#x7684;&#x5DEE;&#x5F02;</p>
-<p>git diff origin/master..master                            # &#x6BD4;&#x8F83;&#x8FDC;&#x7A0B;&#x5206;&#x652F;master&#x4E0A;&#x6709;&#x672C;&#x5730;&#x5206;&#x652F;master&#x4E0A;&#x6CA1;&#x6709;&#x7684;</p>
-<p>git diff origin/master..master &#x2014;stat                     # &#x53EA;&#x663E;&#x793A;&#x5DEE;&#x5F02;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x663E;&#x793A;&#x5177;&#x4F53;&#x5185;&#x5BB9;</p>
-<p>git remote add origin git+ssh://git@192.168.53.168/VT.git # &#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x5B9A;&#x4E49;&#xFF08;&#x7528;&#x4E8E;push/pull/fetch&#xFF09;</p>
-<p>git branch                                                # &#x663E;&#x793A;&#x672C;&#x5730;&#x5206;&#x652F;</p>
-<p>git branch &#x2014;contains 50089                               # &#x663E;&#x793A;&#x5305;&#x542B;&#x63D0;&#x4EA4;50089&#x7684;&#x5206;&#x652F;</p>
-<p>git branch -a                                             # &#x663E;&#x793A;&#x6240;&#x6709;&#x5206;&#x652F;</p>
-<p>git branch -r                                             # &#x663E;&#x793A;&#x6240;&#x6709;&#x539F;&#x521B;&#x5206;&#x652F;</p>
-<p>git branch &#x2014;merged                                       # &#x663E;&#x793A;&#x6240;&#x6709;&#x5DF2;&#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x5206;&#x652F;</p>
-<p>git branch &#x2014;no-merged                                    # &#x663E;&#x793A;&#x6240;&#x6709;&#x672A;&#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x5206;&#x652F;</p>
-<p>git branch -m master master_copy                          # &#x672C;&#x5730;&#x5206;&#x652F;&#x6539;&#x540D;</p>
-<p>git checkout -b master_copy                               # &#x4ECE;&#x5F53;&#x524D;&#x5206;&#x652F;&#x521B;&#x5EFA;&#x65B0;&#x5206;&#x652F;master_copy&#x5E76;&#x68C0;&#x51FA;</p>
-<p>git checkout -b master master_copy                        # &#x4E0A;&#x9762;&#x7684;&#x5B8C;&#x6574;&#x7248;</p>
-<p>git checkout features/performance                         # &#x68C0;&#x51FA;&#x5DF2;&#x5B58;&#x5728;&#x7684;features/performance&#x5206;&#x652F;</p>
-<p>git checkout &#x2014;track hotfixes/BJVEP933                    # &#x68C0;&#x51FA;&#x8FDC;&#x7A0B;&#x5206;&#x652F;hotfixes/BJVEP933&#x5E76;&#x521B;&#x5EFA;&#x672C;&#x5730;&#x8DDF;&#x8E2A;&#x5206;&#x652F;</p>
-<p>git checkout v2.0                                         # &#x68C0;&#x51FA;&#x7248;&#x672C;v2.0</p>
-<p>git checkout -b devel origin/develop                      # &#x4ECE;&#x8FDC;&#x7A0B;&#x5206;&#x652F;develop&#x521B;&#x5EFA;&#x65B0;&#x672C;&#x5730;&#x5206;&#x652F;devel&#x5E76;&#x68C0;&#x51FA;</p>
-<p>git checkout &#x2014; README                                    # &#x68C0;&#x51FA;head&#x7248;&#x672C;&#x7684;README&#x6587;&#x4EF6;&#xFF08;&#x53EF;&#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x9519;&#x8BEF;&#x56DE;&#x9000;&#xFF09;</p>
-<p>git merge origin/master                                   # &#x5408;&#x5E76;&#x8FDC;&#x7A0B;master&#x5206;&#x652F;&#x81F3;&#x5F53;&#x524D;&#x5206;&#x652F;</p>
-<p>git cherry-pick ff44785404a8e                             # &#x5408;&#x5E76;&#x63D0;&#x4EA4;ff44785404a8e&#x7684;&#x4FEE;&#x6539;</p>
-<p>git push origin master                                    # &#x5C06;&#x5F53;&#x524D;&#x5206;&#x652F;push&#x5230;&#x8FDC;&#x7A0B;master&#x5206;&#x652F;</p>
-<p>git push origin :hotfixes/BJVEP933                        # &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;hotfixes/BJVEP933&#x5206;&#x652F;</p>
-<p>git push &#x2014;tags                                           # &#x628A;&#x6240;&#x6709;tag&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</p>
-<p>git fetch                                                 # &#x83B7;&#x53D6;&#x6240;&#x6709;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF08;&#x4E0D;&#x66F4;&#x65B0;&#x672C;&#x5730;&#x5206;&#x652F;&#xFF0C;&#x53E6;&#x9700;merge&#xFF09;</p>
-<p>git fetch &#x2014;prune                                         # &#x83B7;&#x53D6;&#x6240;&#x6709;&#x539F;&#x521B;&#x5206;&#x652F;&#x5E76;&#x6E05;&#x9664;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5DF2;&#x5220;&#x6389;&#x7684;&#x5206;&#x652F;</p>
-<p>git pull origin master                                    # &#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x5206;&#x652F;master&#x5E76;merge&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;</p>
-<p>git mv README README2                                     # &#x91CD;&#x547D;&#x540D;&#x6587;&#x4EF6;README&#x4E3A;README2</p>
-<p>git reset &#x2014;hard HEAD                                     # &#x5C06;&#x5F53;&#x524D;&#x7248;&#x672C;&#x91CD;&#x7F6E;&#x4E3A;HEAD&#xFF08;&#x901A;&#x5E38;&#x7528;&#x4E8E;merge&#x5931;&#x8D25;&#x56DE;&#x9000;&#xFF09;</p>
-<p>git rebase</p>
-<p>git branch -d hotfixes/BJVEP933                           # &#x5220;&#x9664;&#x5206;&#x652F;hotfixes/BJVEP933&#xFF08;&#x672C;&#x5206;&#x652F;&#x4FEE;&#x6539;&#x5DF2;&#x5408;&#x5E76;&#x5230;&#x5176;&#x4ED6;&#x5206;&#x652F;&#xFF09;</p>
-<p>git branch -D hotfixes/BJVEP933                           # &#x5F3A;&#x5236;&#x5220;&#x9664;&#x5206;&#x652F;hotfixes/BJVEP933</p>
-<p>git ls-files                                              # &#x5217;&#x51FA;git index&#x5305;&#x542B;&#x7684;&#x6587;&#x4EF6;</p>
-<p>git show-branch                                           # &#x56FE;&#x793A;&#x5F53;&#x524D;&#x5206;&#x652F;&#x5386;&#x53F2;</p>
-<p>git show-branch &#x2014;all                                     # &#x56FE;&#x793A;&#x6240;&#x6709;&#x5206;&#x652F;&#x5386;&#x53F2;</p>
-<p>git whatchanged                                           # &#x663E;&#x793A;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x4FEE;&#x6539;</p>
-<p>git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # &#x64A4;&#x9500;&#x63D0;&#x4EA4;dfb02e6e4f2f7b573337763e5c0013802e392818</p>
-<p>git ls-tree HEAD                                          # &#x5185;&#x90E8;&#x547D;&#x4EE4;&#xFF1A;&#x663E;&#x793A;&#x67D0;&#x4E2A;git&#x5BF9;&#x8C61;</p>
-<p>git rev-parse v2.0                                        # &#x5185;&#x90E8;&#x547D;&#x4EE4;&#xFF1A;&#x663E;&#x793A;&#x67D0;&#x4E2A;ref&#x5BF9;&#x4E8E;&#x7684;SHA1 HASH</p>
-<p>git reflog                                                # &#x663E;&#x793A;&#x6240;&#x6709;&#x63D0;&#x4EA4;&#xFF0C;&#x5305;&#x62EC;&#x5B64;&#x7ACB;&#x8282;&#x70B9;</p>
-<p>git show HEAD@{5}</p>
-<p>git show master@{yesterday}                               # &#x663E;&#x793A;master&#x5206;&#x652F;&#x6628;&#x5929;&#x7684;&#x72B6;&#x6001;</p>
-<p>git log &#x2014;pretty=format:&#x2019;%h %s&#x2019; &#x2014;graph                   # &#x56FE;&#x793A;&#x63D0;&#x4EA4;&#x65E5;&#x5FD7;</p>
-<p>git show HEAD~3</p>
-<p>git show -s &#x2014;pretty=raw 2be7fcb476</p>
-<p>git stash                                                 # &#x6682;&#x5B58;&#x5F53;&#x524D;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x81F3;&#x4E3A;HEAD&#x72B6;&#x6001;</p>
-<p>git stash list                                            # &#x67E5;&#x770B;&#x6240;&#x6709;&#x6682;&#x5B58;</p>
-<p>git stash show -p stash@{0}                               # &#x53C2;&#x8003;&#x7B2C;&#x4E00;&#x6B21;&#x6682;&#x5B58;</p>
-<p>git stash apply stash@{0}                                 # &#x5E94;&#x7528;&#x7B2C;&#x4E00;&#x6B21;&#x6682;&#x5B58;</p>
-<p>git grep &#x201C;delete from&#x201D;                                    # &#x6587;&#x4EF6;&#x4E2D;&#x641C;&#x7D22;&#x6587;&#x672C;&#x201C;delete from&#x201D;</p>
-<p>git grep -e &#x2018;#define&#x2019; &#x2014;and -e SORT_DIRENT</p>
-<p>git gc</p>
-<p>git fsck</p>
-
+        <p>git命令的集合，打算以后每周详细了解其中三个命令，这样争取在两个月内将git命令熟悉，更加快捷的做好工作</p>
+<p>git init                                                  # 初始化本地git仓库（创建新仓库）</p>
+<p>git config —global user.name “xxx”                       # 配置用户名</p>
+<p>git config —global user.email “xxx@xxx.com”              # 配置邮件</p>
+<p>git config —global color.ui true                         # git status等命令自动着色</p>
+<p>git config —global color.status auto</p>
+<p>git config —global color.diff auto</p>
+<p>git config —global color.branch auto</p>
+<p>git config —global color.interactive auto</p>
+<p>git config —global —unset http.proxy                    # remove  proxy configuration on git</p>
+<p>git clone git+ssh://git@192.168.53.168/VT.git             # clone远程仓库</p>
+<p>git status                                                # 查看当前版本状态（是否修改）</p>
       
     </div>
     
@@ -280,6 +204,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/17/git-toturial/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
