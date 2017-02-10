@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "6L8742VYU6.com.zasal.demo",
+                "paths": [
+                        "/about",
+                        "/home"
+                        ]
+            }
+        ]
+    }
+}
